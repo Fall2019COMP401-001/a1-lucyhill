@@ -6,5 +6,4 @@ public class AdeptCustomer extends A1Adept {
 	int numitems = 0;
 	StoreItem[] items;	
 	double total = 0.0;
-
 }

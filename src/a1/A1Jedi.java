@@ -60,13 +60,18 @@ public class A1Jedi {
 				}
 			}
 		}
-		
-		for (int i=0; i<customer.items.length; i++) {
-				for (int x=0; x<items.length; x++) {
-					if (customer.items[i].name.contentEquals(items[x].name)) {
-						items[i].cust++;
+		for (int i=0; i<items.length; i++) {
+			for (int x=0; x<customer.items.length; x++) {
+				if (customer.items[x].name.contentEquals(items[i].name)) {
+					for (int z=0; z<x; z++) {
+						if (customer.items[x].name.contentEquals(customer.items[z].name)) {
+							break;
+						} else {
+							items[i].cust++;
+						}
 					}
 				}
+			}
 		}
 		return;
 	}
