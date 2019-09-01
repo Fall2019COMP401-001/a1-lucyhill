@@ -57,9 +57,16 @@ public class A1Jedi {
 			for (int x=0; x<customer.items.length; x++) {
 				if (customer.items[x].name.contentEquals(items[i].name)) {
 					items[i].custNum = items[i].custNum + customer.items[x].quantity;
-					items[i].cust++;
 				}
 			}
+		}
+		
+		for (int i=0; i<customer.items.length; i++) {
+				for (int x=0; x<items.length; x++) {
+					if (customer.items[i].name.contentEquals(items[x].name)) {
+						items[i].custNum++;
+					}
+				}
 		}
 		return;
 	}

@@ -45,8 +45,8 @@ public class A1Adept {
 		String small = smallest(customers);
 		double avg = average(customers);
 		
-		System.out.println(big);
-		System.out.println(small);
+		System.out.println("Biggest " + big);
+		System.out.println("Smallest " + small);
 		System.out.println("Average: " + String.format("%.2f", avg));
 		
 		
